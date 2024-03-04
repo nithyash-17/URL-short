@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style (2).css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="shortcut icon" href="Icon/icon1.png" type="image/x-icon">
+    <title>URL Shortener</title>
+
+</head>
+<style>
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    /* body {
+      background-image: url("halloween.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: 100% 100%;
+    } */
+</style>
+
+<body>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="URLbackground - Trim.mp4" type="video/mp4">
+    </video>
+
+    <div class="main">
+        <p>URL Shortener</p>
+        <input type="text" placeholder="Enter the Link Here" id="longurl">
+        <button id="shorten">Shorten</button><br>
+        <input type="text" placeholder="Short Link" id="shorturl">
+        <button id="copy">
+            copy
+            <!-- <span class="material-symbols-outlined"><img
+                    src="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+                    alt="copy"></span> -->
+        </button>
+    </div>
+    <script src="logic.js"></script>
+    <script src="copy.js"></script>
+</body>
+
+</html>
